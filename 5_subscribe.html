@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe | Zen of AI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-white border-b border-grey-800 px-[16px] py-[8px] sticky">
+        <div class="flex items-center sm:hidden lg:hidden">
+            <!-- ------------------------------------------Logo----------------------------------------------------------- -->
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+
+            <!-- ---------------------------------------- Hamburger Button---------------------------------------------- -->
+            <button id="menuBtn" class="text-3xl text-gray-800 ml-auto">
+                &#9776;
+            </button>
+        </div>
+
+    <!-- ---------------------------------------Nav Bar---------------------------------------- -->
+
+    <ul class="hidden sm:flex sm:justify-center sm:items-center sm:gap-[50px] lg:gap-[250px] xl:gap-[350px] 2xl:gap-[450px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a> </div>
+      <div  class="flex justify-center items-center">
+      <li><a href="index.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[14px] py-[7px]  transition-transform duration-100 transform ease-in-out hover:scale-110">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">About</a></li>
+      </div>
+      <div>
+      <a href="6_submit.html" class="block px-[14px] py-[7px] float-right bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">Submit a tool</a>
+      </div>
+    </ul>
+      
+    
+
+    <!-- ---------------------------------------Hidden Menu --------------------------------------->
+    <ul id="menu" class="hidden flex-col sm:hidden lg:hidden">
+      <li><a href="index.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">About</a></li>
+      <li><a href="6_submit.html"
+          class="block px-[16px] py-[8px] bg-blue-600 text-white rounded hover:bg-blue-700">Submit a tool</a></li>
+    </ul>
+
+  </header>
+
+  <div class="max-w-6xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold text-center text-blue-700 mb-4">Subscribe to Zen of AI</h1>
+    <p class="text-center text-gray-600 mb-12">Choose a plan that suits your journey in the world of Artificial Intelligence.</p>
+
+    <div class="grid gap-8 md:grid-cols-3">
+
+      <!-- Free Plan -->
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-300">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">Free</h2>
+        <p class="text-gray-600 mb-6">Perfect for beginners exploring AI tools and updates.</p>
+        <p class="text-4xl font-extrabold mb-6">$0<span class="text-base font-medium text-gray-500">/mo</span></p>
+        <ul class="mb-6 space-y-2 text-sm text-gray-700">
+          <li>✅ Access to featured tools</li>
+          <li>✅ Weekly AI tool newsletter</li>
+          <li>❌ No advanced filters</li>
+          <li>❌ Limited tool comparisons</li>
+        </ul>
+        <button class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800">Get Started</button>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="bg-blue-700 text-white rounded-xl shadow-xl p-8 transform scale-105">
+        <h2 class="text-2xl font-bold mb-4">Pro</h2>
+        <p class="text-blue-100 mb-6">For professionals who want to unlock more power and control.</p>
+        <p class="text-4xl font-extrabold mb-6">$9<span class="text-base font-medium text-blue-200">/mo</span></p>
+        <ul class="mb-6 space-y-2 text-sm text-blue-50">
+          <li>✅ All Free plan features</li>
+          <li>✅ Full access to tool comparisons</li>
+          <li>✅ Early access to new tools</li>
+          <li>✅ Bookmark and save tools</li>
+        </ul>
+        <button class="w-full bg-white text-blue-700 font-semibold py-2 rounded hover:bg-gray-200">Upgrade to Pro</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-300">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">Premium</h2>
+        <p class="text-gray-600 mb-6">Best for businesses and teams building with AI daily.</p>
+        <p class="text-4xl font-extrabold mb-6">$29<span class="text-base font-medium text-gray-500">/mo</span></p>
+        <ul class="mb-6 space-y-2 text-sm text-gray-700">
+          <li>✅ Everything in Pro</li>
+          <li>✅ Team dashboard access</li>
+          <li>✅ Monthly trend reports</li>
+          <li>✅ Priority support & consulting</li>
+        </ul>
+        <button class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800">Go Premium</button>
+      </div>
+
+    </div>
+  </div>
+
+      <!-- ---------------------------------footer---------------------------------------- -->
+    <footer class="border-t border-gray-300 h-auto w-full mt-6 bg-white">
+        <br>
+        <div class="points flex justify-center gap-6 px-[30px] py-[50px]">
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Categories</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Text & Writing</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Image & Art</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Video & Animation</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Code & Development</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Marketing & Advertising</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Audio & Speech</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Explore</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="index.html">Home</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Categories</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="3_blog.html">Blog</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Company</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="4_about.html">About Us</a></h2>
+            </div>
+        </div>
+
+        <br>
+        <div
+            class="footer_bar flex justify-center items-center gap-[150px] border border-gray-300 mx-[16px] p-2 sm:gap-[350px] lg:mx-[100px] lg:gap-[600px]">
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a> </div>
+            <div class="socials flex gap-2 ">
+                <div><a class="facebook border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="facebook.com"><i
+                            class="bi bi-facebook"></i></a></div>
+                <div><a class="linkedin border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="linkedin.com"><i
+                            class="bi bi-linkedin"></i></a></div>
+                <div><a class="twitter border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="x.com"><i
+                            class="bi bi-twitter"></i></a></div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen of AI - About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+        <header class="bg-white border-b border-grey-800 px-[16px] py-[8px] sticky">
+        <div class="flex items-center sm:hidden lg:hidden">
+            <!-- ------------------------------------------Logo----------------------------------------------------------- -->
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+
+            <!-- ---------------------------------------- Hamburger Button---------------------------------------------- -->
+            <button id="menuBtn" class="text-3xl text-gray-800 ml-auto">
+                &#9776;
+            </button>
+        </div>
+
+    <!-- ---------------------------------------Nav Bar---------------------------------------- -->
+
+    <ul class="hidden sm:flex sm:justify-center sm:items-center sm:gap-[50px] lg:gap-[250px] xl:gap-[350px] 2xl:gap-[450px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a> </div>
+      <div  class="flex justify-center items-center">
+      <li><a href="index.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[14px] py-[7px]  transition-transform duration-100 transform ease-in-out hover:scale-110">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">About</a></li>
+      </div>
+      <div>
+      <a href="6_submit.html" class="block px-[14px] py-[7px] float-right bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">Submit a tool</a>
+      </div>
+    </ul>
+      
+    
+
+    <!-- ---------------------------------------Hidden Menu --------------------------------------->
+    <ul id="menu" class="hidden flex-col sm:hidden lg:hidden">
+      <li><a href="index.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">About</a></li>
+      <li><a href="6_submit.html"
+          class="block px-[16px] py-[8px] bg-blue-600 text-white rounded hover:bg-blue-700">Submit a tool</a></li>
+    </ul>
+
+  </header>
+    <!-- ----------------------------------------Toggle Script------------------------------------------------ -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+<main> 
+    <div class="flex justify-center select-none relative">
+        <img src="Vector 5 (2).png" alt="vector" class="h-[195px] w-full absolute">
+        <h1 class="text-white absolute text-xl sm:text-2xl mt-[50px]">About Zen of AI</h1>
+        <p class="text-white absolute text-xs sm:text-sm text-center mt-[90px] mx-[16px]">
+            Empowering your AI journey with clarity, insight, and the best tools in the industry
+        </p>
+        <img src="Polygon 3.png" alt="" class="absolute w-[15px] h-[12px] mt-[40px] ml-[160px] sm:ml-[190px]">
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <div class="points space-y-[20px] mx-4 lg:mx-[100px]">
+        <div class="bg-white p-4 rounded-[5px] shadow-md  transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">🚀 Who We Are</h1>
+            <p class="text-xs sm:text-sm text-gray-700">Zen of AI is your trusted directory and guide to the ever-evolving world of Artificial Intelligence. Whether you’re a student, entrepreneur, developer, designer, or just an AI-curious explorer, we help you cut through the noise and discover the right AI tools for your needs. We believe the future belongs to those who understand AI—and we’re here to make that future more accessible, ethical, and exciting.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">🎯 Our Mission</h1>
+            <p class="text-xs sm:text-sm text-gray-700">To make Artificial Intelligence simple, useful, and approachable by curating the best AI tools, tutorials, insights, and real-world applications—all in one place.</p>
+            <p class="text-center text-xs sm:text-sm text-gray-700">Zen of AI = Simplicity + Strategy + Smart Tech</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">💡 What Makes Us Different?</h1>
+            <ul class="list-disc text-xs sm:text-sm text-gray-700 px-4">
+                <li>Tool Transparency: We provide unbiased reviews and real use cases.</li>
+                <li>Human-Centered AI: Our focus is not just tech—but how humans benefit from it.</li>
+                <li>Constantly Updated: The AI space changes fast. So do we.</li>
+                <li>Community-Focused: Built for developers, creatives, founders, marketers, and learners.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">🤖 Who Zen of AI Is For</h1>
+            <ul class="list-disc text-xs sm:text-sm text-gray-700 px-4">
+                <li>AI Beginners looking to explore</li>
+                <li>Creatives and marketers seeking AI productivity hacks</li>
+                <li>Developers wanting to stay current</li>
+                <li>Business owners searching for smart automation</li>
+                <li>Students exploring the future of tech</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">👥 Meet the Community</h1>
+            <p class="text-xs sm:text-sm text-gray-700">Zen of AI is more than a platform—it's a growing ecosystem of:</p>
+            <ul class="list-disc text-xs sm:text-sm text-gray-700 px-4">
+                <li>AI Builders & Developers pushing the boundaries of automation.</li>
+                <li>Designers & Creators looking to enhance their workflows.</li>
+                <li>Students & Educators using AI for smarter learning.</li>
+                <li>Business Owners & Marketers optimizing results with minimal effort.</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">🔍 How We Curate Tools</h1>
+            <p class="text-xs sm:text-sm text-gray-700">We don't just list tools—we test, research, and verify them...</p>
+            <ul class="list-disc text-xs sm:text-sm text-gray-700 px-4">
+                <li>Practical Use Cases</li>
+                <li>Ease of Use</li>
+                <li>Clear Pricing Models</li>
+                <li>Community Feedback</li>
+                <li>Innovation & Relevance</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-4 rounded-[5px] shadow-md transition-transform duration-200 transform hover:scale-105">
+            <h1 class="text-base sm:text-lg">🚀 Our Vision for the Future</h1>
+            <p class="text-xs sm:text-sm text-gray-700">We're constantly expanding our library, improving user experience...</p>
+            <ul class="list-disc text-xs sm:text-sm text-gray-700 px-4">
+                <li>User Ratings & Tool Comparisons</li>
+                <li>Tutorial Series & Use-Case Breakdowns</li>
+                <li>Real-Time AI Trends Dashboard</li>
+                <li>Personalized Tool Recommendation</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+
+
+    <!-- ---------------------------------footer---------------------------------------- -->
+    <footer class="border-t border-gray-300 h-auto w-full mt-6 bg-white">
+        <br>
+        <div class="points flex justify-center gap-6 px-[30px] py-[50px]">
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Categories</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Text & Writing</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Image & Art</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Video & Animation</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Code & Development</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Marketing & Advertising</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Audio & Speech</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Explore</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="index.html">Home</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Categories</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="3_blog.html">Blog</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Company</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="4_about.html">About Us</a></h2>
+            </div>
+        </div>
+
+        <br>
+        <div
+            class="footer_bar flex justify-center items-center gap-[150px] border border-gray-300 mx-[16px] p-2 sm:gap-[350px] lg:mx-[100px] lg:gap-[600px]">
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a> </div>
+            <div class="socials flex gap-2 ">
+                <div><a class="facebook border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="facebook.com"><i
+                            class="bi bi-facebook"></i></a></div>
+                <div><a class="linkedin border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="linkedin.com"><i
+                            class="bi bi-linkedin"></i></a></div>
+                <div><a class="twitter border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="x.com"><i
+                            class="bi bi-twitter"></i></a></div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>

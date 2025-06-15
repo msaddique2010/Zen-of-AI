@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen of AI - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .bg1 {
+      background-image: url('background(portrate).png');
+      height: 630px;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="bg-white border-b border-grey-800 px-[16px] py-[8px] sticky">
+    <div class="flex items-center sm:hidden lg:hidden">
+      <!-- ------------------------------------------Logo----------------------------------------------------------- -->
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+
+      <!-- ---------------------------------------- Hamburger Button---------------------------------------------- -->
+      <button id="menuBtn" class="text-3xl text-gray-800 ml-auto">
+        &#9776;
+      </button>
+    </div>
+
+    <!-- ---------------------------------------Nav Bar---------------------------------------- -->
+
+    <ul
+      class="hidden sm:flex sm:justify-center sm:items-center sm:gap-[50px] lg:gap-[250px] xl:gap-[350px] 2xl:gap-[450px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+      <div class="flex justify-center items-center">
+        <li><a href="index.html"
+            class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Home</a>
+        </li>
+        <li><a href="2_categories.html"
+            class="block px-[14px] py-[7px]  transition-transform duration-100 transform ease-in-out hover:scale-110">Categories</a>
+        </li>
+        <li><a href="3_blog.html"
+            class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Blog</a>
+        </li>
+        <li><a href="4_about.html"
+            class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">About</a>
+        </li>
+      </div>
+      <div>
+        <a href="6_submit.html"
+          class="block px-[14px] py-[7px] float-right bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">Submit
+          a tool</a>
+      </div>
+    </ul>
+
+
+
+    <!-- ---------------------------------------Hidden Menu --------------------------------------->
+    <ul id="menu" class="hidden flex-col sm:hidden lg:hidden">
+      <li><a href="index.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Categories</a>
+      </li>
+      <li><a href="3_blog.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">About</a></li>
+      <li><a href="6_submit.html"
+          class="block px-[16px] py-[8px] bg-blue-600 text-white rounded hover:bg-blue-700">Submit a tool</a></li>
+    </ul>
+
+  </header>
+
+  <!-- ----------------------------------------Toggle Script------------------------------------------------ -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- -------------------------------------------main------------------------------------------------------- -->
+  <!-- -----------------------------------------section1----------------------------------------------------- -->
+  <main class="bg-white">
+    <section class="section1">
+      <div class="bg1 flex justify-center items-center sm:h-screen lg:h-screen">
+        <div class="title w-full text-center p-[30px]">
+          <div class="section1 mb-[100px]">
+            <p class="text-[24px] font-bold sm:hidden lg:hidden">Discover Best AI Tools for Every Need</p>
+            <p class="text-[24px] font-bold hidden sm:block sm:text-[30px] lg:block ">Discover Best AI Tools
+              for<br>Every Need</p>
+            <p class="text-[14px] text-gray-500">Search, compare, and explore latest AI technologies</p>
+            <br>
+            <input
+              class="rounded-[50px] px-[10px] py-[5px] w-[250px] bg-white border-[2px] border-blue-700 outline-blue-700 sm:w-[300px]"
+              type="text" placeholder="Search">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+
+    <div class="categories flex justify-center items-center gap-4">
+      <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+      <span class="text-gray-500">Explore by Category</span>
+      <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+    </div>
+
+    <!-- ----------------------------------------section2(mobile/tablet)------------------------------------------------ -->
+
+    <section class="section2 mx-[16px] sm:mx-[50px] lg:hidden">
+      <br>
+      <div class="space-y-6">
+        <div class="bg-white rounded-[5px] shadow sm:rounded-[10px]">
+          <img src="text and writing.png" alt="Text and Writing"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Text & Writing</h2>
+            <p>Write smarter, not harder. Tools that help you create blog posts, social media captions,
+              essays, emails, product descriptions, and more using AI.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="image and art.jpg" alt="Image and Art"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Image and Art</h2>
+            <p>Turn ideas into visuals. Generate art, illustrations, logos, or enhance images
+              automatically — perfect for creatives and non-designers alike.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="video and animation.jpg" alt="Video & Animation"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Video & Animation</h2>
+            <p>Bring your content to life. Tools that turn text into videos, auto-edit footage, add
+              subtitles, or animate avatars for presentations and marketing.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="code and development.jpg" alt="Code & Development"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Code & Development</h2>
+            <p>Write better code with less effort. Tools that generate, complete, or debug code using AI
+              — great for developers, students, and tech startups.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="marketing & advertising.jpg" alt="Marketing & Advertising"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Marketing & Advertising</h2>
+            <p>Sell smarter with AI. Tools that help write ad copy, analyze keywords, create landing
+              pages, schedule posts, and improve your online reach.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="productivity & automation.jpg" alt="Productivity & Automation"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Productivity & Automation</h2>
+            <p>Get more done in less time. Automate tasks, manage meetings, generate notes, and
+              streamline daily work with AI-powered assistants.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="audio and speech.jpg" alt="Audio and Speech"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Audio & Speech</h2>
+            <p>Create sound with intelligence. Tools to generate music, convert text to speech, clone
+              voices, and clean or transcribe audio content.</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-[5px] shadow">
+          <img src="education & learning.jpg" alt="Education & Learning"
+            class="w-full h-48 object-cover rounded-tl-[5px] rounded-tr-[5px] sm:h-[300px] sm:rounded-tl-[10px] sm:rounded-tr-[10px]">
+          <div class="p-4 text-sm">
+            <h2 class="font-semibold mb-1">Education & Learning</h2>
+            <p>Learn faster with AI. Study smarter with AI tutors, flashcard generators, essay feedback,
+              and topic explainers — great for students and educators.</p>
+          </div>
+        </div>
+
+      </div>
+      <br>
+    </section>
+
+    <!-- ----------------------------------------section2(laptop)------------------------------------------------ -->
+
+    <section
+      class="section2 mx-[16px] hidden sm: hidden sm:mx-[50px] lg:block lg:mx-[100px] xl:mx-[250px] 2xl:mx-[350px]">
+      <br>
+      <div class="space-y-8">
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pl-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Text & Writing</h2>
+            <p>Write smarter, not harder. Tools that help you create blog posts, social media captions,
+              essays, emails, product descriptions, and more using AI.</p>
+          </div>
+          <img src="text and writing.png" alt="Text and Writing" class="rounded-[20px] w-[400px] h-[226px]">
+
+        </div>
+
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pr-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <img src="image and art.jpg" alt="Image and Art" class="rounded-[20px] w-[400px] h-[226px]">
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Image and Art</h2>
+            <p>Turn ideas into visuals. Generate art, illustrations, logos, or enhance images
+              automatically — perfect for creatives and non-designers alike.</p>
+          </div>
+        </div>
+
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pl-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Video and Animation</h2>
+            <p>Bring your content to life. Tools that turn text into videos, auto-edit footage, add
+              subtitles, or animate avatars for presentations and marketing.</p>
+          </div>
+          <img src="video and animation.jpg" alt="Video & Animation" class="rounded-[20px] w-[400px] h-[226px]">
+
+        </div>
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pr-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <img src="code and development.jpg" alt="Code & Development" class="rounded-[20px] w-[400px] h-[226px]">
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Code and Development</h2>
+            <p>Write better code with less effort. Tools that generate, complete, or debug code using AI
+              — great for developers, students, and tech startups.</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pl-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Marketing and Advertising</h2>
+            <p>Sell smarter with AI. Tools that help write ad copy, analyze keywords, create landing
+              pages, schedule posts, and improve your online reach.</p>
+          </div>
+          <img src="marketing & advertising.jpg" alt="Marketing & Advertising"
+            class="rounded-[20px] w-[400px] h-[226px]">
+
+        </div>
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pr-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <img src="productivity & automation.jpg" alt="Productivity & Automation"
+            class="rounded-[20px] w-[400px] h-[226px]">
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Productivity and Automation</h2>
+            <p>Get more done in less time. Automate tasks, manage meetings, generate notes, and
+              streamline daily work with AI-powered assistants.</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pl-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Audio and Speech</h2>
+            <p>Create sound with intelligence. Tools to generate music, convert text to speech, clone
+              voices, and clean or transcribe audio content.</p>
+          </div>
+          <img src="audio and speech.jpg" alt="Audio & Speech" class="rounded-[20px] w-[400px] h-[226px]">
+
+        </div>
+
+        <div
+          class="w-full rounded-[20px] bg-white shadow flex justify-center items-center gap-[100px] pr-[40px] transition-transform duration-300 transform hover:scale-105">
+
+          <img src="education & learning.jpg" alt="Education & Learning" class="rounded-[20px] w-[400px] h-[226px]">
+          <div class="text w-[400px]">
+            <h2 class="font-semibold mb-1 block">Education and Learning</h2>
+            <p>Learn faster with AI. Study smarter with AI tutors, flashcard generators, essay feedback,
+              and topic explainers — great for students and educators.</p>
+          </div>
+        </div>
+
+      </div>
+      <br>
+    </section>
+    <!-- ----------------------------------------section3------------------------------------------------ -->
+
+    <section class="section3 mx-[16px] sm:mx-[50px] lg:mx[100px]">
+      <div class="why flex justify-center items-center gap-4">
+        <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+        <span class="text-gray-500">Why Zen of AI?</span>
+        <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+      </div>
+
+      <br>
+
+      <div class="space-y-4">
+        <div class="lg:flex lg:justify-center lg:gap-6">
+          <div
+            class=" lg:w-1/2 p-4 bg-gray-50 border rounded shadow-sm transition-transform duration-300 transform hover:scale-105">
+            <p class="font-medium">🔍 Easy to Explore</p>
+            <p class="text-sm">With smart categories, filters, and a clean interface, Zen of AI helps you quickly
+              find the tools you need — whether you’re creating content, coding apps, automating work, or just
+              exploring.
+            </p>
+          </div>
+          <br>
+          <div
+            class=" lg:w-1/2 p-4 bg-gray-50 border rounded shadow-sm transition-transform duration-300 transform hover:scale-105">
+            <p class="font-medium">🧘 Clean, Calm Experience</p>
+            <p class="text-sm">No clutter. No noise. Just a peaceful and well-organized way to discover what AI can
+              do for you. Like the
+              concept of “Zen,” our design and approach focus on clarity, balance, and usefulness.</p>
+          </div>
+        </div>
+
+        <div class="lg:flex lg:justify-center lg:gap-6">
+          <div
+            class=" lg:w-1/2 p-4 bg-gray-50 border rounded shadow-sm transition-transform duration-300 transform hover:scale-105">
+            <p class="font-medium">💡 Educate While You Explore</p>
+            <p class="text-sm">We believe in AI literacy. Alongside tool listings, you’ll find simple explanations,
+              use cases, and tips
+              to help beginners and pros understand how AI works and where it fits into their world.</p>
+          </div>
+<br>
+          <div
+            class=" lg:w-1/2 p-4 bg-gray-50 border rounded shadow-sm transition-transform duration-300 transform hover:scale-105">
+            <p class="font-medium">📈 Stay Ahead of Trends</p>
+            <p class="text-sm">Our “Trending Tools” and blog sections keep you updated on what’s new, what’s rising,
+              and how the world
+              is adapting to the latest AI breakthroughs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <!-- ----------------------------------------section4------------------------------------------------ -->
+    <section class="section4  sm:mx-[50px] lg:mx-[100px]">
+      <div class="why flex justify-center items-center gap-4">
+        <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+        <span class="text-gray-500">Feedback</span>
+        <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+      </div>
+      <br>
+
+      <div class="form_box mx-[16px] rounded-[10px] sm:mx-[50px]">
+        <form class=" bg-gray-100 rounded-[10px] p-[30px]">
+
+          <div class="name flex-col">
+            <div class="lg:flex lg:gap-6">
+              <div class="first_name border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full lg:w-1/2">
+                <label for="first_name" class="block">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Type here"
+                  class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+              </div>
+
+              <br class="block sm:block lg:hidden">
+
+              <div class="last_name border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full lg:w-1/2">
+                <label for="last_name" class="block">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Type here"
+                  class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="email border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+            <label for="email" class="block">Email</label>
+            <input type="email" id="email" name="email" placeholder="Type here"
+              class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+          </div>
+          <br>
+
+          <div class="message border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+            <label for="message" class="block">Message</label>
+            <textarea id="message" name="message" row="4" placeholder="Type here"
+              class="px-0 py-3 text-[14px] w-full border-b border-[#262626] h-[50px] outline-none" required></textarea>
+          </div>
+          <br>
+          <a><input type="submit" value="Submit"
+              class="block px-[16px] py-[6px] bg-blue-500 text-white hover:bg-blue-700 cursor-pointer rounded-[5px]"></a>
+        </form>
+      </div>
+    </section>
+    <br><br>
+  </main>
+  <!-- ---------------------------------footer---------------------------------------- -->
+  <footer class="border-t border-gray-300 h-auto w-full mt-6 bg-white">
+    <br>
+    <div class="points flex justify-center gap-6 px-[30px] py-[50px]">
+      <div>
+        <h1 class="text-blue-600 font-medium text-base sm:text-lg">Categories</h1>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Text & Writing</a>
+        </h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Image & Art</a>
+        </h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Video &
+            Animation</a></h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Code &
+            Development</a></h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Marketing &
+            Advertising</a></h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Audio & Speech</a>
+        </h2>
+      </div>
+
+      <div>
+        <h1 class="text-blue-600 font-medium text-base sm:text-lg">Explore</h1>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="index.html">Home</a></h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Categories</a></h2>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="3_blog.html">Blog</a></h2>
+      </div>
+
+      <div>
+        <h1 class="text-blue-600 font-medium text-base sm:text-lg">Company</h1>
+        <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="4_about.html">About Us</a></h2>
+      </div>
+    </div>
+
+    <br>
+    <div
+      class="footer_bar flex justify-center items-center gap-[150px] border border-gray-300 mx-[16px] p-2 sm:gap-[350px] lg:mx-[100px] lg:gap-[600px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+      <div class="socials flex gap-2 ">
+        <div><a class="facebook border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="facebook.com"><i
+              class="bi bi-facebook"></i></a></div>
+        <div><a class="linkedin border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="linkedin.com"><i
+              class="bi bi-linkedin"></i></a></div>
+        <div><a class="twitter border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="x.com"><i
+              class="bi bi-twitter"></i></a></div>
+      </div>
+    </div>
+    <br>
+  </footer>
+</body>
+
+</html>

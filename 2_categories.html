@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen of AI - Categories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+        <header class="bg-white border-b border-grey-800 px-[16px] py-[8px] sticky">
+        <div class="flex items-center sm:hidden lg:hidden">
+            <!-- ------------------------------------------Logo----------------------------------------------------------- -->
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+
+            <!-- ---------------------------------------- Hamburger Button---------------------------------------------- -->
+            <button id="menuBtn" class="text-3xl text-gray-800 ml-auto">
+                &#9776;
+            </button>
+        </div>
+
+    <!-- ---------------------------------------Nav Bar---------------------------------------- -->
+
+    <ul class="hidden sm:flex sm:justify-center sm:items-center sm:gap-[50px] lg:gap-[250px] xl:gap-[350px] 2xl:gap-[450px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a> </div>
+      <div  class="flex justify-center items-center">
+      <li><a href="index.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[14px] py-[7px]  transition-transform duration-100 transform ease-in-out hover:scale-110">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">About</a></li>
+      </div>
+      <div>
+      <a href="6_submit.html" class="block px-[14px] py-[7px] float-right bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">Submit a tool</a>
+      </div>
+    </ul>
+      
+    
+
+    <!-- ---------------------------------------Hidden Menu --------------------------------------->
+    <ul id="menu" class="hidden flex-col sm:hidden lg:hidden">
+      <li><a href="1_index.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">About</a></li>
+      <li><a href="6_submit.html"
+          class="block px-[16px] py-[8px] bg-blue-600 text-white rounded hover:bg-blue-700">Submit a tool</a></li>
+    </ul>
+
+  </header>
+
+    <!-- ----------------------------------------Toggle Script------------------------------------------------ -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <main>
+        <br>
+        <!-- ----------------------------------section1--------------------------------- -->
+        <section class="sectio1 mx-4 sm:mx-[50px] lg:mx-[100px]">
+            <div class="explore bg-blue-600 rounded-[5px] p-4 text-center">
+                <h1 class="text-white text-[16px] font-semibold">Explore AI by Category</h1>
+                <p class="text-gray-200  text-[12px]">Artificial Intelligence is not one-size-fits-all. Every user —
+                    whether a student, designer, developer, or entrepreneur — has different needs. At Zen of AI, we’ve
+                    organized the most powerful AI tools into meaningful, easy-to-browse categories so you can find
+                    exactly what fits your purpose.</p>
+            </div>
+            <br>
+
+            <!-- ----------------main categories----------------- -->
+            <div class="flex justify-center items-center gap-4">
+                <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+                <div class="text-gray-500">Main Categories</div>
+                <div class="line justify-center w-1/5 h-[0px] border border-blue-700"></div>
+            </div>
+
+            <br>
+
+            <div class="sm:flex sm:gap-3 sm:items-start lg:gap-5">
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Text & Content Creation
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://chat.openai.com" class="text-blue-600 hover:underline">ChatGPT</a>
+                        <a href="https://www.jasper.ai" class="text-blue-600 hover:underline">Jasper AI</a>
+                        <a href="https://www.copy.ai" class="text-blue-600 hover:underline">Copy.ai</a>
+                        <a href="https://writesonic.com/" class="text-blue-600 hover:underline">Writesonic</a>
+                        <a href="https://quillbot.com/" class="text-blue-600 hover:underline">Quillbot</a>
+                    </div>
+                </details>
+                <br>
+                <hr class="sm:hidden">
+
+                <br class="sm:hidden">
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Image & Graphic Design
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://www.midjourney.com/" class="text-blue-600 hover:underline">Midjourney </a>
+                        <a href="https://openai.com/dall-e" class="text-blue-600 hover:underline">DALL·E </a>
+                        <a href="https://runwayml.com/" class="text-blue-600 hover:underline">Runway ML</a>
+                        <a href="https://www.canva.com/features/ai/" class="text-blue-600 hover:underline">Canva AI</a>
+                        <a href="https://www.remove.bg/" class="text-blue-600 hover:underline">Remove.bg</a>
+                    </div>
+                </details>
+
+            </div>
+            <br>
+            <hr>
+
+            <br>
+            <div class="sm:flex sm:gap-3 sm:items-start lg:gap-5">
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Video & Aniamtion Tools
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://www.synthesia.io/" class="text-blue-600 hover:underline">Synthesia </a>
+                        <a href="https://pictory.ai/" class="text-blue-600 hover:underline">Pictory </a>
+                        <a href="https://runwayml.com/gen2" class="text-blue-600 hover:underline">Runway Gen-2</a>
+                        <a href="https://www.lumen5.com/" class="text-blue-600 hover:underline">Lumen5 </a>
+                        <a href="https://www.descript.com/" class="text-blue-600 hover:underline">Descript </a>
+                    </div>
+                </details>
+                <br class="sm:hidden">
+                <hr class="sm:hidden">
+
+                <br>
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Code & Development
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://github.com/features/copilot" class="text-blue-600 hover:underline">GitHub
+                            Copilot</a>
+                        <a href="https://replit.com/site/ghostwriter" class="text-blue-600 hover:underline">Replit
+                            Ghostwriter </a>
+                        <a href="https://aws.amazon.com/codewhisperer" class="text-blue-600 hover:underline">Amazon
+                            CodeWhisperer</a>
+                        <a href="https://www.kite.com/" class="text-blue-600 hover:underline">Kite </a>
+                        <a href="https://www.mutable.ai" class="text-blue-600 hover:underline">Mutable.ai</a>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <hr>
+
+            <br>
+            <div class="sm:flex sm:gap-3 sm:items-start lg:gap-5">
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Marketing & SEO Automation
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://surferseo.com/" class="text-blue-600 hover:underline">Surfer SEO</a>
+                        <a href="https://www.neuraltext.com/" class="text-blue-600 hover:underline">NeuralText </a>
+                        <a href="https://www.scalenut.com/" class="text-blue-600 hover:underline">Scalenut </a>
+                        <a href="https://www.smartwriter.ai/" class="text-blue-600 hover:underline">Smartwriter </a>
+                        <a href="https://www.ocoya.com" class="text-blue-600 hover:underline">Ocoya</a>
+                    </div>
+                </details>
+                <br class="sm:hidden">
+                <hr class="sm:hidden">
+
+                <br>
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Productivity & Workflow
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://www.notion.so/product/ai" class="text-blue-600 hover:underline">Notion
+                            AI</a>
+                        <a href="https://mem.ai/" class="text-blue-600 hover:underline">Mem AI</a>
+                        <a href="https://fireflies.ai/" class="text-blue-600 hover:underline">Fireflies.ai </a>
+                        <a href="https://www.taskade.com/" class="text-blue-600 hover:underline">Taskade </a>
+                        <a href="https://ott" class="text-blue-600 hover:underline">Otter.ai</a>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <hr>
+
+            <br>
+            <div class="sm:flex sm:gap-3 sm:items-start lg:gap-5">
+                <details
+                    class="group bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Audio & Voice Technology
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://www.elevenlabs.io/" class="text-blue-600 hover:underline">ElevenLabs </a>
+                        <a href="https://murf.ai/" class="text-blue-600 hover:underline">Murf AI</a>
+                        <a href="https://play.ht/" class="text-blue-600 hover:underline">Play.ht</a>
+                        <a href="https://www.lalal.ai/" class="text-blue-600 hover:underline">LALAL.AI</a>
+                        <a href="https://www.resemble.ai/" class="text-blue-600 hover:underline">Resemble AI</a>
+                    </div>
+                </details>
+                <br class="sm:hidden">
+                <hr class="sm:hidden">
+
+                <br>
+
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Education & Learning
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://socratic.org/" class="text-blue-600 hover:underline">Socratic by Google</a>
+                        <a href="https://quizlet.com/" class="text-blue-600 hover:underline">Quizlet AI</a>
+                        <a href="https://www.khanacademy.org/khan-labs"
+                            class="text-blue-600 hover:underline">Khanmigo</a>
+                        <a href="https://languagetool.org/" class="text-blue-600 hover:underline">LanguageTool </a>
+                        <a href="https://www.grammarly.com/grammarlygo"
+                            class="text-blue-600 hover:underline">GrammarlyGO
+                        </a>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <hr>
+
+            <br>
+            <div class="sm:flex sm:gap-3 sm:items-start lg:gap-5">
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        E-commerce & Online Selling
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://www.shopify.com/magic" class="text-blue-600 hover:underline">Shopify Magic</a>
+                        <a href="https://www.zigpoll.com/" class="text-blue-600 hover:underline">Zigpoll </a>
+                        <a href="https://www.clerk.io/" class="text-blue-600 hover:underline">Clerk.io</a>
+                        <a href="https://www.octaneai.com/" class="text-blue-600 hover:underline">Octane AI</a>
+                        <a href="https://copymonkey.ai/" class="text-blue-600 hover:underline">CopyMonkey </a>
+                    </div>
+                </details>
+
+                <br class="hidden">
+                <hr class="hidden">
+
+                <br>
+                <details
+                    class="bg-white border border-gray-300 rounded-lg p-4 shadow-md w-full group transition-transform duration-200 transform hover:scale-105">
+                    <summary
+                        class="cursor-pointer font-semibold text-sm text-gray-800 my-2 flex justify-between items-center">
+                        Data Analysis & Research
+                        <i class="bi bi-chevron-right transition-transform duration-200 group-open:rotate-90"></i>
+                    </summary>
+                    <div class="mt-2 flex flex-col space-y-2 pl-1">
+                        <h2 class="text-[16px] font-semibold">Tools:</h2>
+                        <a href="https://monkeylearn.com/" class="text-blue-600 hover:underline">MonkeyLearn </a>
+                        <a href="https://chat.openai.com/" class="text-blue-600 hover:underline">ChatGPT</a>
+                        <a href="https://www.polymersearch.com/" class="text-blue-600 hover:underline">Polymer
+                            Search</a>
+                        <a href="https://www.tellius.com/" class="text-blue-600 hover:underline">Tellius</a>
+                        <a href="https://www.akkio.com/" class="text-blue-600 hover:underline">Akkio </a>
+                    </div>
+                </details>
+            </div>
+            <br>
+            <hr>
+        </section>
+    </main>
+    <!-- ---------------------------------footer---------------------------------------- -->
+    <footer class="border-t border-gray-300 h-auto w-full mt-6 bg-white">
+        <br>
+        <div class="points flex justify-center gap-6 px-[30px] py-[50px]">
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Categories</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Text & Writing</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Image & Art</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Video & Animation</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Code & Development</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Marketing & Advertising</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Audio & Speech</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Explore</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="index.html">Home</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Categories</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="3_blog.html">Blog</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Company</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="4_about.html">About Us</a></h2>
+            </div>
+        </div>
+
+        <br>
+        <div
+            class="footer_bar flex justify-center items-center gap-[150px] border border-gray-300 mx-[16px] p-2 sm:gap-[350px] lg:mx-[100px] lg:gap-[600px]">
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+            <div class="socials flex gap-2 ">
+                <div><a class="facebook border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="facebook.com"><i
+                            class="bi bi-facebook"></i></a></div>
+                <div><a class="linkedin border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="linkedin.com"><i
+                            class="bi bi-linkedin"></i></a></div>
+                <div><a class="twitter border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="x.com"><i
+                            class="bi bi-twitter"></i></a></div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>

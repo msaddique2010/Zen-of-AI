@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit - Zen of AI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"> </script>
+</head>
+<body>
+    <header class="bg-white border-b border-grey-800 px-[16px] py-[8px] sticky">
+        <div class="flex items-center sm:hidden lg:hidden">
+            <!-- ------------------------------------------Logo----------------------------------------------------------- -->
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+
+            <!-- ---------------------------------------- Hamburger Button---------------------------------------------- -->
+            <button id="menuBtn" class="text-3xl text-gray-800 ml-auto">
+                &#9776;
+            </button>
+        </div>
+
+    <!-- ---------------------------------------Nav Bar---------------------------------------- -->
+
+    <ul class="hidden sm:flex sm:justify-center sm:items-center sm:gap-[50px] lg:gap-[250px] xl:gap-[350px] 2xl:gap-[450px]">
+      <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+      <div  class="flex justify-center items-center">
+      <li><a href="index.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[14px] py-[7px]  transition-transform duration-100 transform ease-in-out hover:scale-110">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[14px] py-[7px] transition-transform duration-100 transform ease-in-out hover:scale-110">About</a></li>
+      </div>
+      <div>
+      <a href="6_submit.html" class="block px-[14px] py-[7px] float-right bg-blue-600 text-white rounded-[5px] hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">Submit a tool</a>
+      </div>
+    </ul>
+      
+    
+
+    <!-- ---------------------------------------Hidden Menu --------------------------------------->
+    <ul id="menu" class="hidden flex-col sm:hidden lg:hidden">
+      <li><a href="index.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Home</a></li>
+      <li><a href="2_categories.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Categories</a></li>
+      <li><a href="3_blog.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">Blog</a></li>
+      <li><a href="4_about.html" class="block px-[16px] py-[8px] text-gray-800 hover:bg-gray-200">About</a></li>
+      <li><a href="6_submit.html"
+          class="block px-[16px] py-[8px] bg-blue-600 text-white rounded hover:bg-blue-700">Submit a tool</a></li>
+    </ul>
+
+  </header>
+  <main>
+    <div class="form_box mx-[16px] rounded-[10px] sm:mx-[50px] py-10">
+  <form class="bg-gray-100 rounded-[10px] p-[30px] space-y-6">
+
+    <!-- ---------------------------------Submitter Info--------------------- -->
+    <div class="lg:flex lg:gap-6">
+      <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full lg:w-1/2">
+        <label for="first_name" class="block">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Type here"
+          class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+      </div>
+      <br>
+      <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full lg:w-1/2">
+        <label for="last_name" class="block">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Type here"
+          class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="email" class="block">Email</label>
+      <input type="email" id="email" name="email" placeholder="Type here"
+        class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+    </div>
+
+    <!-- Tool Name -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="tool_name" class="block">Tool Name</label>
+      <input type="text" id="tool_name" name="tool_name" placeholder="Enter AI tool name"
+        class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+    </div>
+
+    <!-- Tool Category -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="category" class="block">Tool Category</label>
+      <select id="category" name="category"
+        class="w-full border-b border-[#262626] text-[12px] py-2 outline-none bg-white">
+        <option value="">Select a category</option>
+        <option>Text & Writing</option>
+        <option>Image & Design</option>
+        <option>Video & Audio</option>
+        <option>Code & Development</option>
+        <option>Marketing & SEO</option>
+        <option>Data & Research</option>
+        <option>E-commerce Tools</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- Website Link -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="website" class="block">Tool Website Link</label>
+      <input type="url" id="website" name="website" placeholder="https://example.com"
+        class="px-0 py-3 text-[12px] w-full border-b border-[#262626] h-[10px] outline-none" required>
+    </div>
+
+    <!-- Price -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="pricing" class="block">Pricing Type</label>
+      <select id="pricing" name="pricing"
+        class="w-full border-b border-[#262626] text-[12px] py-2 outline-none bg-white">
+        <option value="">Select pricing</option>
+        <option>Free</option>
+        <option>Paid</option>
+        <option>Freemium</option>
+      </select>
+    </div>
+
+    <!-- Description -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="description" class="block">Short Description</label>
+      <textarea id="description" name="description" rows="4" placeholder="Briefly describe the tool"
+        class="px-0 py-3 text-[14px] w-full border-b border-[#262626] h-[60px] outline-none" required></textarea>
+    </div>
+
+    <!-- Notes -->
+    <div class="border border-[#262626] rounded-[5px] px-3 py-[16px] bg-white w-full">
+      <label for="notes" class="block">Additional Notes (optional)</label>
+      <textarea id="notes" name="notes" rows="3" placeholder="Anything extra to mention?"
+        class="px-0 py-3 text-[14px] w-full border-b border-[#262626] h-[40px] outline-none"></textarea>
+    </div>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Tool"
+      class="block px-[16px] py-[10px] bg-blue-600 text-white hover:bg-blue-700 cursor-pointer rounded-[5px]">
+  </form>
+</div>
+</main>
+
+    <!-- ---------------------------------footer---------------------------------------- -->
+    <footer class="border-t border-gray-300 h-auto w-full mt-6 bg-white">
+        <br>
+        <div class="points flex justify-center gap-6 px-[30px] py-[50px]">
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Categories</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Text & Writing</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Image & Art</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Video & Animation</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Code & Development</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Marketing & Advertising</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Audio & Speech</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Explore</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="index.html">Home</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="2_categories.html">Categories</a></h2>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="3_blog.html">Blog</a></h2>
+            </div>
+
+            <div>
+                <h1 class="text-blue-600 font-medium text-base sm:text-lg">Company</h1>
+                <h2 class="text-gray-500 text-xs sm:text-sm hover:text-blue-600"><a href="4_about.html">About Us</a></h2>
+            </div>
+        </div>
+
+        <br>
+        <div
+            class="footer_bar flex justify-center items-center gap-[150px] border border-gray-300 mx-[16px] p-2 sm:gap-[350px] lg:mx-[100px] lg:gap-[600px]">
+            <div class="w-[40px] font-bold text-gray-800"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+            <div class="socials flex gap-2 ">
+                <div><a class="facebook border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="facebook.com"><i
+                            class="bi bi-facebook"></i></a></div>
+                <div><a class="linkedin border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="linkedin.com"><i
+                            class="bi bi-linkedin"></i></a></div>
+                <div><a class="twitter border border-gray-300 p-[4px] text-[20px] rounded-[5px]" href="x.com"><i
+                            class="bi bi-twitter"></i></a></div>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>
