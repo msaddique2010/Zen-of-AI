@@ -47,6 +47,15 @@
     </ul>
 
   </header>
+      <!-- ----------------------------------------Toggle Script------------------------------------------------ -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
   <main>
     <div class="form_box mx-[16px] rounded-[10px] sm:mx-[50px] py-10">
   <form class="bg-gray-100 rounded-[10px] p-[30px] space-y-6">
